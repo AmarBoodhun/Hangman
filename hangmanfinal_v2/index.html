@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+  <title>Hangman</title>
+  <style type="text/css">
+    body{
+      background-color: #e63946;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container" style="height: 100vh;">
+      <div class="row" style="height: inherit;">
+          <div class="col-lg-12 justify-content-center align-items-center d-flex flex-column" style="height: inherit;">
+            <h1 class="text-center mb-5">Hangman</h1>
+            <div class="float-right">Wrong Answers: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+            <div class="text-center">
+              <img id='hangmanPic' src="./images/hangman0.png" alt="">
+              <p>Guess the Programming Language:</p>
+              <p id="wordSpotlight">The word to be guessed goes here</p>
+              <p id="hint"></p>
+              <div id="keyboard"></div>
+              <button class="btn btn-dark" onClick="reset()">Reset</button>
+              <button class="btn btn-dark" onClick="hint()">Need a clue</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<script src="js/index.js"></script>
+</body>
+</html>
